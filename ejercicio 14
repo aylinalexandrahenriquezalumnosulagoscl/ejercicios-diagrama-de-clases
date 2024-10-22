@@ -1,0 +1,51 @@
+Ejercicio 14: Sistema de Recetas
+Clases: Receta, Ingrediente, Usuario. Relaciones: Un Usuario puede tener múltiples
+Recetas, una Receta puede contener múltiples Ingredientes.
+
+
++---------------------+
+|       Receta        |
++---------------------+
+| id: int             |
+| nombre: string      |
+| descripcion: string |
+| tiempoPreparacion: int |
+| usuarioId: int     |
++---------------------+
+| + agregarIngrediente()           |
+| + listarIngredientes()            |
+| + obtenerDetalles()              |
++---------------------+
+
+            * 
+            |
+            |
+            | 1
++---------------------+
+|    Ingrediente       |
++---------------------+
+| id: int             |
+| nombre: string      |
+| cantidad: string     |
+| unidad: string      |
+| recetaId: int      |
++---------------------+
+| + obtenerDetalles()             |
+| + modificarCantidad()            |
++---------------------+
+
+            1  
+            |
+            |
+            | *
++---------------------+
+|       Usuario        |
++---------------------+
+| id: int             |
+| nombre: string      |
+| email: string       |
+| contraseña: string  |
++---------------------+
+| + crearReceta()                 |
+| + verRecetas()                  |
++---------------------+
